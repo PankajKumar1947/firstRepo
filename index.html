@@ -3,13 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Navigation Bar</title>
+    <style>
+        .navbar{
+            background-color: rgb(65, 117, 239);
+        }
+        .navbar ul{
+            overflow: auto;
+
+        }
+        .navbar li{
+            list-style: none;
+            text-decoration: none;
+            float: left;
+            margin: 15px;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            /* margin: 44px 34px; */
+            padding: 15px 9px;
+        }
+        .navbar li a:hover{
+            color: aquamarine;
+        }
+        #search{
+            float: right;
+            padding: 4px;
+            margin: 9px 5px;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <h3>Name = tiger</h3>
-        <h3>Roll =325363646</h3>
-        <h3>Dept = cse</h3>
-    </div>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <div>
+                    <input type="text" name="Search" id="search" placeholder="search anything">
+                </div>
+            </ul>
+
+        </nav>
+    </header>
 </body>
 </html>
